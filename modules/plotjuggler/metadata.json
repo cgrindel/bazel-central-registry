@@ -1,0 +1,17 @@
+{
+    "homepage": "https://www.plotjuggler.io/",
+    "maintainers": [
+        {
+            "email": "chuck.grindel@glydways.com",
+            "github": "cgrindel",
+            "name": "Chuck Grindel"
+        }
+    ],
+    "repository": [
+        "github:facontidavide/PlotJuggler"
+    ],
+    "versions": [
+        "3.17.2"
+    ],
+    "yanked_versions": {}
+}

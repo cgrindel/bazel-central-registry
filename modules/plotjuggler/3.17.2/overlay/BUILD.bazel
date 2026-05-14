@@ -1,0 +1,13 @@
+package(default_visibility = ["//visibility:public"])
+
+exports_files([
+    "LICENSE.md",
+    "package.xml",
+])
+
+# Convenience alias for downstream plugin authors: link against
+# `@plotjuggler//:plotjuggler_base` to get the plugin SDK.
+alias(
+    name = "plotjuggler_base",
+    actual = "//plotjuggler_base:plotjuggler_base",
+)

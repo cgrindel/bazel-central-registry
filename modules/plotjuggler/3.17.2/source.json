@@ -1,0 +1,14 @@
+{
+    "url": "https://github.com/facontidavide/PlotJuggler/archive/refs/tags/3.17.2.tar.gz",
+    "integrity": "sha256-iTISFy+eZTQTLj95HNPFe7VULUlM4is3Vqjk1I5r+iE=",
+    "strip_prefix": "PlotJuggler-3.17.2",
+    "overlay": {
+        "3rdparty/qwt/BUILD.bazel": "sha256-FOQGfSKjeE2r7+gEOlkuU/llLFRpCXxQ0jjzVjmv3PM=",
+        "3rdparty/sol2-3.5.0/BUILD.bazel": "sha256-JN26C7q9r8uAhR+O6SoymWvBsK3OaPkLnZeGvjQXzHc=",
+        "BUILD.bazel": "sha256-Xl9K0zzEG5mt9xECkPVBdow62Pn6KBsrtqF92ZxF31k=",
+        "MODULE.bazel": "sha256-kVXimwgdrG17EwXBix7SXyZgd+WHgy+I+ZP5ojePNgQ=",
+        "plotjuggler_base/BUILD.bazel": "sha256-xxFzMQliimZ1/ZAnKH+2n7tk+ZgqAWQAS+L2vmvlWkE="
+    },
+    "patch_strip": 1,
+    "patches": {}
+}

@@ -1,0 +1,89 @@
+load("@rules_qt//:qt.bzl", "qt_cc_library")
+
+package(default_visibility = ["//visibility:public"])
+
+# PlotJuggler plugin SDK + base widget library. Translation of the
+# plotjuggler_base target defined inline in the top-level CMakeLists.txt
+# (lines 213-274). Static by default; the BASE_AS_SHARED CMake option is
+# not modeled here (Bazel callers pick STATIC/SHARED via linkstatic on the
+# consuming target).
+qt_cc_library(
+    name = "plotjuggler_base",
+    srcs = [
+        "src/datastreamer_base.cpp",
+        "src/plotdata.cpp",
+        "src/plotlegend.cpp",
+        "src/plotmagnifier.cpp",
+        "src/plotpanner.cpp",
+        "src/plotwidget_base.cpp",
+        "src/plotzoomer.cpp",
+        "src/range_slider.cpp",
+        "src/reactive_function.cpp",
+        "src/save_plot.cpp",
+        "src/timeseries_qwt.cpp",
+        "src/transform_function.cpp",
+    ],
+    # Headers needing MOC. Public SDK interface headers (Q_DECLARE_INTERFACE)
+    # plus widget bases used internally.
+    hdrs = [
+        "include/PlotJuggler/dataloader_base.h",
+        "include/PlotJuggler/datastreamer_base.h",
+        "include/PlotJuggler/plotwidget_base.h",
+        "include/PlotJuggler/range_slider.h",
+        "include/PlotJuggler/statepublisher_base.h",
+        "include/PlotJuggler/toolbox_base.h",
+        "include/PlotJuggler/transform_function.h",
+        # Internal plot widget headers that contain Q_OBJECT and live next to
+        # their .cpp under src/. AUTOMOC picks these up in the CMake build.
+        "src/plotlegend.h",
+        "src/plotmagnifier.h",
+        "src/plotpanner.h",
+        "src/plotzoomer.h",
+        "src/timeseries_qwt.h",
+    ],
+    defines = [
+        # PROJECT_VERSION_* from CMakeLists.txt:6.
+        "PJ_MAJOR_VERSION=3",
+        "PJ_MINOR_VERSION=17",
+        "PJ_PATCH_VERSION=2",
+        # Plugin install directory — runtime hint only; downstream callers
+        # may override.
+        'PJ_PLUGIN_INSTALL_DIRECTORY=\\"lib/plotjuggler/plugins\\"',
+        "FMT_HEADER_ONLY",
+    ],
+    includes = [
+        "include",
+        "src",
+    ],
+    # Public headers without Q_OBJECT — exposed but not MOC'd.
+    normal_hdrs = [
+        "include/PlotJuggler/alphanum.hpp",
+        "include/PlotJuggler/dialog_utils.h",
+        "include/PlotJuggler/line_edit.h",
+        "include/PlotJuggler/messageparser_base.h",
+        "include/PlotJuggler/pj_plugin.h",
+        "include/PlotJuggler/pj_serializer.hpp",
+        "include/PlotJuggler/plotdata.h",
+        "include/PlotJuggler/plotdatabase.h",
+        "include/PlotJuggler/reactive_function.h",
+        "include/PlotJuggler/save_plot.h",
+        "include/PlotJuggler/string_dict_index.h",
+        "include/PlotJuggler/string_ref_sso.h",
+        "include/PlotJuggler/stringseries.h",
+        "include/PlotJuggler/svg_util.h",
+        "include/PlotJuggler/timeseries.h",
+    ] + glob([
+        "include/PlotJuggler/contrib/**/*.h",
+        "include/PlotJuggler/contrib/**/*.hpp",
+        "include/PlotJuggler/util/**/*.h",
+        "include/PlotJuggler/util/**/*.hpp",
+    ]),
+    deps = [
+        "//3rdparty/qwt:plotjuggler_qwt",
+        "//3rdparty/sol2-3.5.0:sol2",
+        "@fmt",
+        "@lua",
+        "@rules_qt//:qt_core",
+        "@rules_qt//:qt_widgets",
+    ],
+)
