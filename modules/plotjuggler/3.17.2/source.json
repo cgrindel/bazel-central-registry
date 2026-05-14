@@ -6,8 +6,8 @@
         "3rdparty/qwt/BUILD.bazel": "sha256-FOQGfSKjeE2r7+gEOlkuU/llLFRpCXxQ0jjzVjmv3PM=",
         "3rdparty/sol2-3.5.0/BUILD.bazel": "sha256-JN26C7q9r8uAhR+O6SoymWvBsK3OaPkLnZeGvjQXzHc=",
         "BUILD.bazel": "sha256-Xl9K0zzEG5mt9xECkPVBdow62Pn6KBsrtqF92ZxF31k=",
-        "MODULE.bazel": "sha256-kVXimwgdrG17EwXBix7SXyZgd+WHgy+I+ZP5ojePNgQ=",
-        "plotjuggler_base/BUILD.bazel": "sha256-xxFzMQliimZ1/ZAnKH+2n7tk+ZgqAWQAS+L2vmvlWkE="
+        "MODULE.bazel": "sha256-Tqiy15PH9Q0eRHg23UDhsib+bK4vIjS+narQ5+uQA2c=",
+        "plotjuggler_base/BUILD.bazel": "sha256-VKSIF/z5OcBktp1kKHZPEaPj5HNCuF0nlFzTmhhktI8="
     },
     "patch_strip": 1,
     "patches": {}

@@ -72,12 +72,11 @@ qt_cc_library(
         "include/PlotJuggler/stringseries.h",
         "include/PlotJuggler/svg_util.h",
         "include/PlotJuggler/timeseries.h",
-    ] + glob([
-        "include/PlotJuggler/contrib/**/*.h",
-        "include/PlotJuggler/contrib/**/*.hpp",
-        "include/PlotJuggler/util/**/*.h",
-        "include/PlotJuggler/util/**/*.hpp",
-    ]),
+        # Header-only utilities under include/PlotJuggler/contrib/ and util/.
+        "include/PlotJuggler/contrib/ring_span.hpp",
+        "include/PlotJuggler/contrib/unordered_dense.hpp",
+        "include/PlotJuggler/util/delayed_callback.hpp",
+    ],
     deps = [
         "//3rdparty/qwt:plotjuggler_qwt",
         "//3rdparty/sol2-3.5.0:sol2",
