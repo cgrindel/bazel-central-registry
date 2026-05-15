@@ -1,0 +1,15 @@
+diff --git a/3rdparty/qwt/src/qwt_plot_canvas.h b/3rdparty/qwt/src/qwt_plot_canvas.h
+index b13336d..830a147 100644
+--- a/3rdparty/qwt/src/qwt_plot_canvas.h
++++ b/3rdparty/qwt/src/qwt_plot_canvas.h
+@@ -16,8 +16,8 @@
+ #include <qframe.h>
+ 
+ class QwtPlot;
+-class QPixmap;
+-class QPainterPath;
++#include <QPixmap>
++#include <QPainterPath>
+ 
+ /*!
+    \brief Canvas of a QwtPlot.

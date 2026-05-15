@@ -1,0 +1,15 @@
+diff --git a/3rdparty/qwt/src/qwt_plot_picker.h b/3rdparty/qwt/src/qwt_plot_picker.h
+index f1508b3..5203601 100644
+--- a/3rdparty/qwt/src/qwt_plot_picker.h
++++ b/3rdparty/qwt/src/qwt_plot_picker.h
+@@ -15,8 +15,8 @@
+ #include "qwt_axis_id.h"
+ 
+ class QwtPlot;
+-class QPointF;
+-class QRectF;
++#include <QPointF>
++#include <QRectF>
+ 
+ #if QT_VERSION < 0x060000
+ template< typename T > class QVector;

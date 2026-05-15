@@ -1,0 +1,13 @@
+diff --git a/3rdparty/qwt/src/qwt_plot_rescaler.h b/3rdparty/qwt/src/qwt_plot_rescaler.h
+index 5759e2b..493ed1c 100644
+--- a/3rdparty/qwt/src/qwt_plot_rescaler.h
++++ b/3rdparty/qwt/src/qwt_plot_rescaler.h
+@@ -17,7 +17,7 @@
+ 
+ class QwtPlot;
+ class QwtInterval;
+-class QResizeEvent;
++#include <QResizeEvent>
+ 
+ /*!
+     \brief QwtPlotRescaler takes care of fixed aspect ratios for plot scales

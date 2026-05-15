@@ -1,0 +1,16 @@
+diff --git a/3rdparty/qwt/src/qwt_abstract_legend.h b/3rdparty/qwt/src/qwt_abstract_legend.h
+index 576a6be..5bee011 100644
+--- a/3rdparty/qwt/src/qwt_abstract_legend.h
++++ b/3rdparty/qwt/src/qwt_abstract_legend.h
+@@ -13,9 +13,9 @@
+ #include "qwt_global.h"
+ #include <qframe.h>
+ 
+-class QwtLegendData;
++#include "qwt_legend_data.h"
+ template< typename T > class QList;
+-class QVariant;
++#include <QVariant>
+ 
+ /*!
+    \brief Abstract base class for legend widgets

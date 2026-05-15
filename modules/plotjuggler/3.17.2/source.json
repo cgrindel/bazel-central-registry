@@ -15,6 +15,21 @@
         "qt6-plotmagnifier.patch": "sha256-xGZdvianROOmrf8Vs3gSnpX3mDUG6WUNXUcdAUWHkCc=",
         "qt6-plotwidget_base.patch": "sha256-Gt/uVs85O24faYtRXgqWCaH3avjk2cx70B6xrBSZcPE=",
         "qt6-plotzoomer.patch": "sha256-QT3Vw4QEmXUPs3mqEH+474KqeX2XvuDG9+DjxZqcSPE=",
-        "qt6-qwt.patch": "sha256-FeDIGG5wmx4Aj0oWDplm2tIsWowEFCxPCfM6HI+D6Dw="
+        "qt6-qwt.patch": "sha256-FeDIGG5wmx4Aj0oWDplm2tIsWowEFCxPCfM6HI+D6Dw=",
+        "qt6-qwt_abstract_legend-fwd-decls.patch": "sha256-A3xIn2ytyha3WFXn8KvS+v3ALN7v0XoiLHmGrK5HBag=",
+        "qt6-qwt_legend-fwd-decls.patch": "sha256-HLXF1/ndBkkjtbKDRiPQgZSy7J+Zfir6BIZauiasMF4=",
+        "qt6-qwt_magnifier-fwd-decls.patch": "sha256-9F0vXMqf8fN9tHrnu50OTaNHJw6TXU/AWcWT2CYOOcU=",
+        "qt6-qwt_panner-fwd-decls.patch": "sha256-SL7WkGObLzc3ZpvBqo7BSU011zC6EpcGtGBCcI/kUcQ=",
+        "qt6-qwt_plot-fwd-decls.patch": "sha256-Y+H18vphgx+ylihzdCFUAdkXi+vivb8HDnFmQVbI7XM=",
+        "qt6-qwt_picker-fwd-decls.patch": "sha256-kz9SQ45rmvEsu5pvbRvB6UfBsja+AruEqB9LJ9GI6zE=",
+        "qt6-qwt_plot_canvas-fwd-decls.patch": "sha256-lz2nQ6v6lndY7EwtMUoeu2r3e7PLxQPS5Ed8w6yZQWw=",
+        "qt6-qwt_plot_opengl_canvas-fwd-decls.patch": "sha256-Gb8Hcipxg9UNY4GNwVyxHLiJssG/NO0xdjfVLBfg3O8=",
+        "qt6-qwt_plot_picker-fwd-decls.patch": "sha256-7n6usQFX3BF32Er80lFxzZie5FvuOP48bmJNC3ZtK4U=",
+        "qt6-qwt_plot_renderer-fwd-decls.patch": "sha256-rQTjJssUR+6bSedJ6tI5biLgFJ/rxWhFM4Eb78yA0dY=",
+        "qt6-qwt_plot_rescaler-fwd-decls.patch": "sha256-BfjTpPIJq3W3ks9liixRwWXizWNh4WrOCcxDCM87YCA=",
+        "qt6-qwt_plot_zoomer-fwd-decls.patch": "sha256-nvp4qbBI/QaxOqD2qCkk0Fa80tAUY/Z+/Jagt7/Dl7E=",
+        "qt6-qwt_scale_widget-fwd-decls.patch": "sha256-Pm5hSSm8nnyITePe1ITRSvLrX/r/fToV6wqYhuKhVd0=",
+        "qt6-qwt_text_label-fwd-decls.patch": "sha256-puG+cUOmIU2QHlArUvDhzsICxbPIwKlfKbQh75OrdhQ=",
+        "qt6-qwt_widget_overlay-fwd-decls.patch": "sha256-hP+WD35FPcp2n5Hmp9dJ3Cr7eC2JlK4BpNQtl9W2LkU="
     }
 }

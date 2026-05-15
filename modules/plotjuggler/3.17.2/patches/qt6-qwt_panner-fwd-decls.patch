@@ -1,0 +1,15 @@
+diff --git a/3rdparty/qwt/src/qwt_panner.h b/3rdparty/qwt/src/qwt_panner.h
+index a640e65..31931b0 100644
+--- a/3rdparty/qwt/src/qwt_panner.h
++++ b/3rdparty/qwt/src/qwt_panner.h
+@@ -13,8 +13,8 @@
+ #include "qwt_global.h"
+ #include <qwidget.h>
+ 
+-class QCursor;
+-class QPixmap;
++#include <QCursor>
++#include <QPixmap>
+ 
+ /*!
+    \brief QwtPanner provides panning of a widget

@@ -1,0 +1,17 @@
+diff --git a/3rdparty/qwt/src/qwt_text_label.h b/3rdparty/qwt/src/qwt_text_label.h
+index 44f8c4b..5c71b6e 100644
+--- a/3rdparty/qwt/src/qwt_text_label.h
++++ b/3rdparty/qwt/src/qwt_text_label.h
+@@ -15,9 +15,9 @@
+ 
+ #include <qframe.h>
+ 
+-class QString;
+-class QPaintEvent;
+-class QPainter;
++#include <QString>
++#include <QPaintEvent>
++#include <QPainter>
+ 
+ /*!
+    \brief A Widget which displays a QwtText

@@ -1,0 +1,27 @@
+diff --git a/3rdparty/qwt/src/qwt_plot_renderer.h b/3rdparty/qwt/src/qwt_plot_renderer.h
+index e009b4d..fed98e2 100644
+--- a/3rdparty/qwt/src/qwt_plot_renderer.h
++++ b/3rdparty/qwt/src/qwt_plot_renderer.h
+@@ -18,17 +18,17 @@
+ 
+ class QwtPlot;
+ class QwtScaleMap;
+-class QRectF;
+-class QPainter;
+-class QPaintDevice;
++#include <QRectF>
++#include <QPainter>
++#include <QPaintDevice>
+ 
+ #ifndef QT_NO_PRINTER
+-class QPrinter;
++#include <QPrinter>
+ #endif
+ 
+ #ifndef QWT_NO_SVG
+ #ifdef QT_SVG_LIB
+-class QSvgGenerator;
++#include <QSvgGenerator>
+ #endif
+ #endif
+ 

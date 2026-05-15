@@ -1,0 +1,13 @@
+diff --git a/3rdparty/qwt/src/qwt_legend.h b/3rdparty/qwt/src/qwt_legend.h
+index b67c6cf..1a970c4 100644
+--- a/3rdparty/qwt/src/qwt_legend.h
++++ b/3rdparty/qwt/src/qwt_legend.h
+@@ -16,7 +16,7 @@
+ 
+ #include <qvariant.h>
+ 
+-class QScrollBar;
++#include <QScrollBar>
+ 
+ /*!
+    \brief The legend widget

@@ -1,0 +1,13 @@
+diff --git a/3rdparty/qwt/src/qwt_scale_widget.h b/3rdparty/qwt/src/qwt_scale_widget.h
+index 02f5e6d..5661228 100644
+--- a/3rdparty/qwt/src/qwt_scale_widget.h
++++ b/3rdparty/qwt/src/qwt_scale_widget.h
+@@ -19,7 +19,7 @@
+ #include <qcolor.h>
+ #include <qstring.h>
+ 
+-class QPainter;
++#include <QPainter>
+ class QwtTransform;
+ class QwtScaleDiv;
+ class QwtColorMap;

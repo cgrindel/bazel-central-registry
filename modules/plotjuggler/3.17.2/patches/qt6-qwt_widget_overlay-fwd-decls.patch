@@ -1,0 +1,15 @@
+diff --git a/3rdparty/qwt/src/qwt_widget_overlay.h b/3rdparty/qwt/src/qwt_widget_overlay.h
+index 0fd6a3a..650f44b 100644
+--- a/3rdparty/qwt/src/qwt_widget_overlay.h
++++ b/3rdparty/qwt/src/qwt_widget_overlay.h
+@@ -13,8 +13,8 @@
+ #include "qwt_global.h"
+ #include <qwidget.h>
+ 
+-class QPainter;
+-class QRegion;
++#include <QPainter>
++#include <QRegion>
+ 
+ /*!
+    \brief An overlay for a widget
