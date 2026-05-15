@@ -3,12 +3,18 @@
     "integrity": "sha256-iTISFy+eZTQTLj95HNPFe7VULUlM4is3Vqjk1I5r+iE=",
     "strip_prefix": "PlotJuggler-3.17.2",
     "overlay": {
-        "3rdparty/qwt/BUILD.bazel": "sha256-FOQGfSKjeE2r7+gEOlkuU/llLFRpCXxQ0jjzVjmv3PM=",
+        "3rdparty/qwt/BUILD.bazel": "sha256-XI43l/gIRZA55tJxOxvjZSuWamivpghRyRUOwq79j14=",
         "3rdparty/sol2-3.5.0/BUILD.bazel": "sha256-JN26C7q9r8uAhR+O6SoymWvBsK3OaPkLnZeGvjQXzHc=",
         "BUILD.bazel": "sha256-Xl9K0zzEG5mt9xECkPVBdow62Pn6KBsrtqF92ZxF31k=",
         "MODULE.bazel": "sha256-Tqiy15PH9Q0eRHg23UDhsib+bK4vIjS+narQ5+uQA2c=",
-        "plotjuggler_base/BUILD.bazel": "sha256-VKSIF/z5OcBktp1kKHZPEaPj5HNCuF0nlFzTmhhktI8="
+        "plotjuggler_base/BUILD.bazel": "sha256-FIGo1LVbfW1JFaUn+0F+lP/n6yEJHD67P+8kroNFpnA="
     },
     "patch_strip": 1,
-    "patches": {}
+    "patches": {
+        "qt6-plotlegend.patch": "sha256-UOIXkyFCnAhdVXVYdKjFV8R6tWwxwyqWXi6SWyHRfps=",
+        "qt6-plotmagnifier.patch": "sha256-xGZdvianROOmrf8Vs3gSnpX3mDUG6WUNXUcdAUWHkCc=",
+        "qt6-plotwidget_base.patch": "sha256-Gt/uVs85O24faYtRXgqWCaH3avjk2cx70B6xrBSZcPE=",
+        "qt6-plotzoomer.patch": "sha256-QT3Vw4QEmXUPs3mqEH+474KqeX2XvuDG9+DjxZqcSPE=",
+        "qt6-qwt.patch": "sha256-FeDIGG5wmx4Aj0oWDplm2tIsWowEFCxPCfM6HI+D6Dw="
+    }
 }

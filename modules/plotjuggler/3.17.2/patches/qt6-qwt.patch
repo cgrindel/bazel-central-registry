@@ -1,0 +1,37 @@
+diff --git a/3rdparty/qwt/src/qwt_abstract_scale_draw.cpp b/3rdparty/qwt/src/qwt_abstract_scale_draw.cpp
+index 8398b58..6e06eaf 100644
+--- a/3rdparty/qwt/src/qwt_abstract_scale_draw.cpp
++++ b/3rdparty/qwt/src/qwt_abstract_scale_draw.cpp
+@@ -19,6 +19,8 @@
+ #include <qlist.h>
+ #include <qlocale.h>
+ 
++#include <QRegularExpression>
++
+ class QwtAbstractScaleDraw::PrivateData
+ {
+   public:
+@@ -375,8 +377,8 @@ double QwtAbstractScaleDraw::maxTickLength() const
+ QwtText QwtAbstractScaleDraw::label( double value ) const
+ {
+   auto str = QLocale().toString( value, 'f', 6 );
+-  str.remove( QRegExp("0+$") ); // Remove any number of trailing 0's
+-  str.remove( QRegExp("\\.$") ); // If the last character is just a '.' then remove it
++  str.remove( QRegularExpression("0+$") ); // Remove any number of trailing 0's
++  str.remove( QRegularExpression("\\.$") ); // If the last character is just a '.' then remove it
+   return str;
+ }
+ 
+diff --git a/3rdparty/qwt/src/qwt_plot_opengl_canvas.h b/3rdparty/qwt/src/qwt_plot_opengl_canvas.h
+index 32f3f8c..2121c8a 100644
+--- a/3rdparty/qwt/src/qwt_plot_opengl_canvas.h
++++ b/3rdparty/qwt/src/qwt_plot_opengl_canvas.h
+@@ -13,7 +13,7 @@
+ #include "qwt_global.h"
+ #include "qwt_plot_abstract_canvas.h"
+ 
+-#include <qopenglwidget.h>
++#include <QOpenGLWidget>
+ 
+ class QwtPlot;
+ 

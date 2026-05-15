@@ -84,5 +84,6 @@ qt_cc_library(
         "@lua",
         "@rules_qt//:qt_core",
         "@rules_qt//:qt_widgets",
+        "@rules_qt//:qt_xml",
     ],
 )

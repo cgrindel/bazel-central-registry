@@ -1,0 +1,19 @@
+diff --git a/plotjuggler_base/src/plotmagnifier.cpp b/plotjuggler_base/src/plotmagnifier.cpp
+index 0834759..b13d6b8 100644
+--- a/plotjuggler_base/src/plotmagnifier.cpp
++++ b/plotjuggler_base/src/plotmagnifier.cpp
+@@ -150,12 +150,12 @@ QPointF PlotMagnifier::invTransform(QPoint pos)
+ 
+ void PlotMagnifier::widgetWheelEvent(QWheelEvent* event)
+ {
+-  _mouse_position = invTransform(event->pos());
++  _mouse_position = invTransform(event->position().toPoint());
+   QwtPlotMagnifier::widgetWheelEvent(event);
+ }
+ 
+ void PlotMagnifier::widgetMousePressEvent(QMouseEvent* event)
+ {
+-  _mouse_position = invTransform(event->pos());
++  _mouse_position = invTransform(event->position().toPoint());
+   QwtPlotMagnifier::widgetMousePressEvent(event);
+ }
